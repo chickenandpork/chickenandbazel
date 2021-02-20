@@ -1,0 +1,72 @@
+load("@bazel_gazelle//:def.bzl", "gazelle")
+load("@rules_cc//cc:defs.bzl", "objc_library")
+load("@bazel_skylib//rules:build_test.bzl", "build_test")
+load("@bazel_skylib//rules:copy_file.bzl", "copy_file")
+load("@build_bazel_rules_apple//apple:macos.bzl", "macos_bundle", "macos_command_line_application")
+load("@build_bazel_rules_apple//apple:versioning.bzl", "apple_bundle_version")
+load("//:bzl/workspace_checksums.bzl", "versions")
+
+# FWIW, Gazelle being primarily a Go BUILD file-creation tool, also acts as a
+# linter/formatter/beautifier for BUILD files: side-effect being to reduce whitespace-based thrash
+# on change.
+
+# gazelle:prefix https://github.com/chickenandpork/chickenandbazel
+gazelle(name = "gazelle")
+
+apple_bundle_version(
+    name = "ChickenAndBazelVersion",
+    build_version = "1.0",
+)
+
+# These sources get copied to the workspace with their subdirs; these copies -- cleaned genrules -- strip folder names
+copy_file(name="localbazelisk", src="@bazelisk//:bazelisk", out="bazelisk")
+copy_file(name="localibazel", src="@ibazel//ibazel:ibazel", out="ibazel")
+copy_file(name="localpostinstall", src="//:.scripts/postinstall", out="postinstall")
+
+
+## This will buildfail with "does not contain a toolchain for cpu 'darwin_x86_64'" if you don't have
+## XCode installed and license agreed-to.
+## resolve via: "xcode-select --install", or manually select the XCode toolkit from the App Store
+## If you're getting a "Error in fail: Could not determine Xcode version at all. This likely means
+## Xcode isn't available; if you think this is a mistake, please file an issue.", conform you've
+## "sudo xcodebuild -license"
+#macos_command_line_application(
+#    name = "ChickenAndBazel-%s.pkg" % versions()["bazelisk"],
+#    bundle_id = "com.chickenandpork.chickenandbazel",
+#    infoplists = [":ChickenAndBazel.plist"],
+#    minimum_os_version = "10.11",
+#    version = ":ChickenAndBazelVersion",
+#    deps = [
+#	# "//:.scripts/postinstall",
+#        "@bazelisk//:bazelisk",
+#        "@ibazel//ibazel:ibazel",
+#    ],
+#)
+
+
+macos_bundle(
+    name = "ChickenAndBazel.pkg",
+    additional_contents = {
+        ":localpostinstall": "scripts",
+        ":localibazel": "usr/bin",
+        ":localbazelisk": "usr/bin",
+    },
+    bundle_name = "ChickenAndBazel",
+    bundle_id = "com.chickenandpork.chickenandbazel",
+    infoplists = [":ChickenAndBazel.plist"],
+    minimum_os_version = "10.11",
+    version = ":ChickenAndBazelVersion",
+    deps = [ ],
+)
+
+copy_file(name="copy", src=":ChickenAndBazel.pkg", out="ChickenAndBazel-%s.pkg" % versions()["bazelisk"])
+
+# Not normally needed, just done for rules_apple's examples so a
+# 'bazel test examples/...' ensures all Examples still build.
+build_test(
+    name = "ExamplesBuildTest",
+    targets = [
+	":ChickenAndBazel-%s.pkg" % versions()["bazelisk"],
+    ],
+)
+
