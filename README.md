@@ -28,6 +28,13 @@ That's all I got.
 2. "bazel" and "ibazel" are now on your PATH (if /usr/local/bin is on your PATH)
 3. be aware that "ibazel" is not graceful if there's no WORKSPACE file in your work dir
 
+## Rebuilding
+
+If you want to rebuild this in your environment (or -- better -- extend it to multi-arch the binaries for ultimate versatility), then you likely already know how to build it:
+
+1. bazel build //...:all
+2. There is no second step
+
 
 ## Software License
 

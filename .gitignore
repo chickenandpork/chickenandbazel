@@ -2,3 +2,8 @@
 .scripts/
 .stage/
 ChickenAndBazel.pkg
+
+bazel-bin
+bazel-chickenandbazel2
+bazel-out
+bazel-testlogs

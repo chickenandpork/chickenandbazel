@@ -1,0 +1,19 @@
+load("@rules_pkg//pkg:tar.bzl", "pkg_tar")
+load("@rules_pkg//pkg:pkgbuild.bzl", "pkgbuild_tars")
+
+pkg_tar(
+    name = "bazelisk",
+    srcs = ["@bazelisk//file", "@ibazel//file"],
+    mode = "0755",
+    package_dir = "/usr/local/bin",
+)
+
+# The resulting PKG should be installable by:
+#
+# sudo installer -pkg bazel-out/darwin-fastbuild/bin/chickenandbazel.pkg -target /
+#
+pkgbuild_tars(
+    name = "chickenandbazel",
+    tars = [ ":bazelisk" ],
+    version = "0.9.99.3",  # avant-1.0
+)
