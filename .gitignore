@@ -4,6 +4,7 @@
 ChickenAndBazel.pkg
 
 bazel-bin
+bazel-chickenandbazel
 bazel-chickenandbazel2
 bazel-out
 bazel-testlogs

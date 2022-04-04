@@ -1,16 +1,15 @@
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive", "http_file")
 load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
 
+RULES_PKG_COMMIT="8691378c7e41fca1a5f4f2c7f692c38cf8fba6b8"  # v0.4.0 + pkgbuild (issue 264)
 http_archive(
     name = "rules_pkg",
     urls = [
-        "https://mirror.bazel.build/github.com/bazelbuild/rules_pkg/releases/download/0.4.0/rules_pkg-0.4.0.tar.gz",
-        "https://github.com/bazelbuild/rules_pkg/releases/download/0.4.0/rules_pkg-0.4.0.tar.gz",
+	"https://github.com/chickenandpork/rules_pkg/archive/{}.tar.gz".format(RULES_PKG_COMMIT),
     ],
-    sha256 = "038f1caa773a7e35b3663865ffb003169c6a71dc995e39bf4815792f385d837d",
+    sha256 = "f955807cbd2b1b74e66746d47d6231b0968ccb67a012ecb8000b650c424fea1d",
+    strip_prefix = "rules_pkg-{}".format(RULES_PKG_COMMIT),
 )
-
-#local_repository( name = "rules_pkg", path = "/Users/allanc/src/rules_pkg")
 
 # Every rule of type pkg_tar_impl implicitly depends upon the target '@rules_pkg//:build_tar', but
 # this target needs @rules_python//python:defs.bzl
