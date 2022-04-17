@@ -1,0 +1,24 @@
+default:
+  image:
+    name: l.gcr.io/google/bazel:latest
+    entrypoint: [""]
+  before_script:
+    - echo "build --disk_cache=$CI_PROJECT_DIR/.cache" >> .bazelrc
+  tags:
+    - shared-macos-amd64
+
+cache:
+  key: bazel_cache
+  paths:
+    - .cache/
+
+stages:
+  - "Compile"
+#  - "Validate"
+#  - "Publish"
+
+# Compile Stage ===================================================================
+"Compile":
+  stage: "Compile"
+  script: |
+    bazel build //...:all
