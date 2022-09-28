@@ -1,0 +1,33 @@
+# review this file merged: "yq eval '. | explode(.)' .gitlab/pipelines.yml |less"
+
+
+stages:
+  - "Compile"
+  - "Publish"
+
+
+# Validation    ===================================================================
+.template_validate: &Compile
+  stage: "Compile"
+  allow_failure: false
+  script:
+    - /bin/true
+  tags:
+    - macosx
+
+.template_validate: &Validate
+  stage: "Validate"
+  allow_failure: false
+  script:
+    - /bin/true
+  tags:
+    - macosx
+
+
+
+# Compilation    ===================================================================
+"Compile":
+  <<: *Compile
+  script: |
+    bazel build //...:all
+
