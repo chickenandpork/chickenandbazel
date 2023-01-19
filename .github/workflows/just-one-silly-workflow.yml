@@ -8,7 +8,7 @@ jobs:
     runs-on: macos-latest
     # removed matrix: [macos-latest, ubuntu-latest, macos-12, macos-11]
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       # fetch-depth 0 gives us the full history
       with:
         fetch-depth: '0'
