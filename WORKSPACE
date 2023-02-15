@@ -15,6 +15,7 @@ http_archive(
 http_archive(
     name = "rules_python",
     sha256 = "36362b4d54fcb17342f9071e4c38d63ce83e2e57d7d5599ebdde4670b9760664",
+    strip_prefix = "rules_python-0.18.0",
     url = "https://github.com/bazelbuild/rules_python/releases/download/0.18.0/rules_python-0.18.0.tar.gz",
 )
 
