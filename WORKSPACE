@@ -2,9 +2,9 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 http_archive(
     name = "aspect_bazel_lib",
-    sha256 = "d488d8ecca98a4042442a4ae5f1ab0b614f896c0ebf6e3eafff363bcc51c6e62",
-    strip_prefix = "bazel-lib-1.33.0",
-    url = "https://github.com/aspect-build/bazel-lib/releases/download/v1.33.0/bazel-lib-v1.33.0.tar.gz",
+    sha256 = "271d5f38c218a0c2fe2e94f94dfc0b497e931cbb335348bf1695015191be5367",
+    strip_prefix = "bazel-lib-1.34.1",
+    url = "https://github.com/aspect-build/bazel-lib/releases/download/v1.34.1/bazel-lib-v1.34.1.tar.gz",
 )
 
 http_archive(
@@ -18,10 +18,10 @@ http_archive(
 
 http_archive(
     name = "rules_pkg",
-    sha256 = "8c20f74bca25d2d442b327ae26768c02cf3c99e93fad0381f32be9aab1967675",
+    sha256 = "8f9ee2dc10c1ae514ee599a8b42ed99fa262b757058f65ad3c384289ff70c4b8",
     urls = [
-        "https://mirror.bazel.build/github.com/bazelbuild/rules_pkg/releases/download/0.8.1/rules_pkg-0.8.1.tar.gz",
-        "https://github.com/bazelbuild/rules_pkg/releases/download/0.8.1/rules_pkg-0.8.1.tar.gz",
+        "https://mirror.bazel.build/github.com/bazelbuild/rules_pkg/releases/download/0.9.1/rules_pkg-0.9.1.tar.gz",
+        "https://github.com/bazelbuild/rules_pkg/releases/download/0.9.1/rules_pkg-0.9.1.tar.gz",
     ],
 )
 
