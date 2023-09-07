@@ -17,7 +17,7 @@ jobs:
         os: [macos-latest]
         #os: [macos-latest, macos-12, macos-11]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       # action runners have bazelisk: - uses: bazelbuild/setup-bazelisk@v2
         # https://github.com/bazelbuild/bazel/issues/11062
       - run: mkdir -p "${TEST_TMPDIR}"
