@@ -30,9 +30,9 @@ http_archive(
 
 http_archive(
     name = "rules_python",
-    sha256 = "e3f1cc7a04d9b09635afb3130731ed82b5f58eadc8233d4efb59944d92ffc06f",
-    strip_prefix = "rules_python-0.33.2",
-    url = "https://github.com/bazelbuild/rules_python/releases/download/0.33.2/rules_python-0.33.2.tar.gz",
+    sha256 = "0cc05ddb27614baecace068986931e2a6e9f69114e6115fc5dc58250faf56e0f",
+    strip_prefix = "rules_python-0.37.0",
+    url = "https://github.com/bazelbuild/rules_python/releases/download/0.37.0/rules_python-0.37.0.tar.gz",
 )
 
 # Unneeded until using unittests
