@@ -1,10 +1,12 @@
 load("//lib:lipo.bzl", "lipo_check", "lipo_create")
-load(":name-version-sha.bzl", "binaries")
 
-lipo_check(binary = ":ibazel")
+# lipo_check(binary = ":ibazel")
 
 lipo_create(
     name = "lipo",
-    srcs = binaries(),
+    srcs = [
+        "@@rules_multitool++multitool+multitool.ibazel.macos_arm64//tools/ibazel:macos_arm64_executable",
+        #"@@rules_multitool++multitool+multitool.ibazel.macos_x86_64//tools/ibazel:macos_x86_64_executable",
+    ],
     out = "ibazel",
 )

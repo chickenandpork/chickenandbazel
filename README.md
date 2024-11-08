@@ -28,6 +28,7 @@ That's all I got.
     3. git town alias true  (per user)
 2. "bazel" and "ibazel" are now on your PATH (if /usr/local/bin is on your PATH)
 3. be aware that "ibazel" is not graceful if there's no WORKSPACE file in your work dir
+    (see https://github.com/bazelbuild/bazel-watcher/pull/697 ) (workaround: touch WORKSPACE.bzlmod)
 
 
 ## Software License

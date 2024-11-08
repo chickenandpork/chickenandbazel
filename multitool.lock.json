@@ -1,0 +1,92 @@
+{
+  "$schema": "https://raw.githubusercontent.com/theoremlp/rules_multitool/main/lockfile.schema.json",
+  "bazelisk": {
+    "binaries": [
+      {
+        "kind": "file",
+        "url": "https://github.com/bazelbuild/bazelisk/releases/download/v1.24.0/bazelisk-darwin-arm64",
+        "sha256": "8e13a5ca47fcdb34c283dcc9e301a4cb47d4986adf6a4c74626a5c43589d26ae",
+        "os": "macos",
+        "cpu": "arm64"
+      },
+      {
+        "kind": "file",
+        "url": "https://github.com/bazelbuild/bazelisk/releases/download/v1.24.0/bazelisk-darwin-amd64",
+        "sha256": "cee2dd6f98a3c164303cfcad97e955d51e609993476572e7ccba2b571ed2c78f",
+        "os": "macos",
+        "cpu": "x86_64"
+      }
+    ]
+  },
+  "gittown": {
+    "binaries": [
+        {
+            "kind": "archive",
+            "url": "https://github.com/git-town/git-town/releases/download/v17.0.0/git-town_macos_arm_64.tar.gz",
+            "file": "git-town",
+            "sha256": "630828a53dede703ed9e29d04a7b4646835fd50d3a02fd08388db7674793bdbb",
+            "os": "macos",
+            "cpu": "arm64"
+        },
+        {
+            "kind": "archive",
+            "url": "https://github.com/git-town/git-town/releases/download/v17.0.0/git-town_macos_intel_64.tar.gz",
+            "file": "git-town",
+            "sha256": "d4927fa933f7e6eec9e53a7bf541655eac0ca78dacdb0948522e7fb9e753f079",
+            "os": "macos",
+            "cpu": "x86_64"
+        }
+    ]
+  },
+  "ibazel": {
+    "binaries": [
+      {
+        "kind": "file",
+        "url": "https://github.com/bazelbuild/bazel-watcher/releases/download/v0.25.2/ibazel_darwin_arm64",
+        "sha256": "e4d5e04a2a0e4dda21350ffe26623469a85ab8786570aea962b058a954dcd3f1",
+        "os": "macos",
+        "cpu": "arm64"
+      }
+    ]
+  },
+  "nomad": {
+    "binaries": [
+      {
+        "kind": "archive",
+        "url": "https://releases.hashicorp.com/nomad/1.9.4/nomad_1.9.4_darwin_arm64.zip",
+        "file": "nomad",
+        "sha256": "938b8877d11eefaae4ca4b3489e396a17a2f8a6d5115e55d341f384ae82bc603",
+        "os": "macos",
+        "cpu": "arm64"
+      },
+      { 
+        "kind": "archive",
+        "url": "https://releases.hashicorp.com/nomad/1.9.4/nomad_1.9.4_darwin_amd64.zip",
+        "file": "nomad",
+        "sha256": "310a6855eb0365d222fcc024a68575da6c108b446b1db7fd02cc3c355e88061a",
+        "os": "macos",
+        "cpu": "x86_64"
+      } 
+    ]   
+  },    
+  "terraform": {
+    "binaries": [
+      {
+        "kind": "archive",
+        "url": "https://releases.hashicorp.com/terraform/1.10.4/terraform_1.10.4_darwin_arm64.zip",
+        "file": "terraform",
+        "sha256": "3264fe6a903665ef91d18eebd99c494976f9d96f5dac603e4f1e283682404009",
+        "os": "macos",
+        "cpu": "arm64"
+      },    
+      {     
+        "kind": "archive",
+        "url": "https://releases.hashicorp.com/terraform/1.10.4/terraform_1.10.4_darwin_amd64.zip",
+        "file": "terraform",
+        "sha256": "3e3d54a96b62b205636ce0fa9b64b85c23cb7e8ad0d63eb74d70080ff1ebfa3e",
+        "os": "macos",
+        "cpu": "x86_64"
+      }     
+    ]       
+  }         
+}
