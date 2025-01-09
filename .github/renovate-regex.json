@@ -1,10 +1,10 @@
 {
-  "bazel_watcher_darwin_arm64": {
+  "ibazel_darwin_arm64": {
     "renovate_datasource": "github-release-attachments",
     "renovate_depname": "bazelbuild/bazel-watcher",
     "renovate_versioning": "semver",
-    "sha256": "c2da75cbab7a4b2b97ba534653bb12e4dd731157bb1c9d660f79df3b330a7239",
-    "version": "v0.25.3"
+    "sha256": "e4d5e04a2a0e4dda21350ffe26623469a85ab8786570aea962b058a954dcd3f1",
+    "version": "v0.25.2"
   },
   "bazelisk_darwin_amd64": {
     "renovate_datasource": "github-release-attachments",
