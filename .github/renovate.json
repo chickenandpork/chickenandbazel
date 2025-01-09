@@ -10,6 +10,16 @@
         "renovatebot datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s.*?_VERSION: (?<currentValue>.*)\\s"
       ],
       "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver-coerced{{/if}}"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "renovate-regex.json$"
+      ],
+      "matchStrings": [
+        "\"renovate_datasource\": \"(?<datasource>.*?)\",\\s    \"renovate_depname\": \"(?<depName>.*?)\",\\s(    \"renovate_versioning\": \"(?<versioning>.*?)\",\\s)?    \"sha256\": \"(?<currentDigest>.*?)\",\\s    \"version\": \"(?<currentValue>.*?)\""
+      ],
+      "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver-coerced{{/if}}"
     }
   ],
   "extends": [
@@ -20,6 +30,7 @@
   ],
   "packageRules": [
     {
+      "automerge": true,
       "enabled": true,
       "matchManagers": [
         "bazel",
@@ -27,11 +38,16 @@
         "github-actions",
         "gomod",
         "pre-commit"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "pin",
+        "pinDigest",
+        "digest",
+        "lockFileMaintenance",
+        "rollback",
+        "bump"
       ]
-    },
-    {
-      "automerge": true,
-      "matchUpdateTypes": ["patch", "pin", "pinDigest", "digest", "lockFileMaintenance", "rollback", "bump"]
     }
   ],
   "platformAutomerge": true,
