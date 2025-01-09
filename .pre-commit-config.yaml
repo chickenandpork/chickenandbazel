@@ -8,7 +8,7 @@
 ---
 repos:
   - repo: https://github.com/adrienverge/yamllint.git
-    rev: v1.26.0
+    rev: v1.35.1
     hooks:
       - id: yamllint
         args: [
@@ -16,13 +16,8 @@ repos:
           '{extends: relaxed, rules: {line-length: {max: 320}}}'
         ]
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.20.0
+    rev: 0.31.0
     hooks:
       - id: check-github-actions
       - id: check-github-workflows
       - id: check-renovate
-  - repo: https://github.com/warchant/pre-commit-buildifier
-    rev: 0.0.2
-    hooks:
-    -   id: buildifier
-        args: ['--version', "5.1.0", '-mode=fix']
