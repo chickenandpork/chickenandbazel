@@ -1,0 +1,9 @@
+{
+  "bazelisk_darwin_arm64": {
+    "renovate_datasource": "github-releases",
+    "renovate_depname": "bazelbuild/bazelisk",
+    "renovate_versioning": "semver",
+    "sha256": "b13dd89c6ecd90944ca3539f5a2c715a18f69b7458878c471a902a8e482ceb4b",
+    "version": "v1.25.0"
+  }
+}
