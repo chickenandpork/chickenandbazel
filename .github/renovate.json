@@ -23,7 +23,7 @@
     }
   ],
   "extends": [
-    "config:base"
+    "config:recommended"
   ],
   "labels": [
     "dependencies"
@@ -51,10 +51,10 @@
     }
   ],
   "platformAutomerge": true,
-  "platformCommit": true,
+  "platformCommit": "enabled",
   "postUpdateOptions": [
     "gomodMassage",
     "gomodTidy"
   ],
-  "stabilityDays": 3
+  "minimumReleaseAge": "3 days"
 }
