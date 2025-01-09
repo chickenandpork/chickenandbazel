@@ -1,6 +1,20 @@
 {
+  "bazel_watcher_darwin_arm64": {
+    "renovate_datasource": "github-release-attachments",
+    "renovate_depname": "bazelbuild/bazel-watcher",
+    "renovate_versioning": "semver",
+    "sha256": "c2da75cbab7a4b2b97ba534653bb12e4dd731157bb1c9d660f79df3b330a7239",
+    "version": "v0.25.3"
+  },
+  "bazelisk_darwin_amd64": {
+    "renovate_datasource": "github-release-attachments",
+    "renovate_depname": "bazelbuild/bazelisk",
+    "renovate_versioning": "semver",
+    "sha256": "0af019eeb642fa70744419d02aa32df55e6e7a084105d49fb26801a660aa56d3",
+    "version": "v1.25.0"
+  },
   "bazelisk_darwin_arm64": {
-    "renovate_datasource": "github-releases",
+    "renovate_datasource": "github-release-attachments",
     "renovate_depname": "bazelbuild/bazelisk",
     "renovate_versioning": "semver",
     "sha256": "b13dd89c6ecd90944ca3539f5a2c715a18f69b7458878c471a902a8e482ceb4b",
