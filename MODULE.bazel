@@ -1,0 +1,15 @@
+bazel_dep(name = "aspect_bazel_lib", version = "2.7.8")
+bazel_dep(name = "bazel_skylib", version = "1.7.1")
+bazel_dep(name = "rules_multitool", version = "1.0.0")
+bazel_dep(name = "rules_pkg", version = "1.0.1")
+bazel_dep(name = "rules_python", version = "0.33.2")
+
+multitool = use_extension("@rules_multitool//multitool:extension.bzl", "multitool")
+multitool.hub(lockfile = "//:multitool.lock.json")
+use_repo(multitool, "multitool")
+
+find_system_lipo = use_repo_rule("//toolchains/lipo:configure_lipo_from_system.bzl", "find_system_lipo")
+find_system_lipo(name="system_lipo")
+#use_repo(find_system_lipo,"system_lipo")
+register_toolchains("@system_lipo//:lipo_auto_toolchain")
+

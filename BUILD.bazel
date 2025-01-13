@@ -17,6 +17,8 @@ pkg_tar(
         "//toolchains/bazelisk:lipo",
         "//toolchains/git-town:lipo",
         "//toolchains/ibazel:lipo",
+        "//toolchains/nomad:lipo",
+        "//toolchains/terraform:lipo",
     ],
     mode = "0755",
     package_dir = "/usr/local/bin",

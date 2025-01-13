@@ -13,19 +13,24 @@ def _write_build(ctx, path):
         executable = False,
     )
 
-# use the system "where" to find the local `lipo`, writing whatever results (path or "") to the
-# hydrated template
+# use the system "which" to find the local `lipo`, writing whatever results (path or "") to hydrate
+# the template
 def _find_system_lipo_impl(ctx):
     lipo_path = ctx.which("lipo")
+
     if ctx.attr.verbose:
         if lipo_path:
             print("Found lipo at '%s'" % lipo_path)
         else:
             print("No system lipo found.")
+
     _write_build(ctx = ctx, path = lipo_path)
 
+    # implicit None return: "reproducable with the given ctx"
+
+
 # This _find_system_lipo, as a repository_rule, will run during collection of dependencies
-_find_system_lipo = repository_rule(
+find_system_lipo = repository_rule(
     implementation = _find_system_lipo_impl,
     doc = "Create a virtual external repository that contains a single BUILD file that defines the toolchain providing lipo executable based on system discovery",
     local = True,
@@ -36,9 +41,3 @@ _find_system_lipo = repository_rule(
         ),
     },
 )
-
-# actually find the system lipo, and register the "not found" toolchain as a fallback.  The
-# `reponame` here becomes the name of the external virtual repo (default: "system_lipo")
-def find_system_lipo(reponame = "system_lipo", verbose = True):
-    _find_system_lipo(name = reponame, verbose = verbose)
-    native.register_toolchains("@%s//:lipo_auto_toolchain" % reponame, "//toolchains/lipo:lipo_missing_toolchain")

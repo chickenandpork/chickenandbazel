@@ -1,8 +1,10 @@
 load("//lib:lipo.bzl", "lipo_create")
-load(":name-version-sha.bzl", "binaries")
 
 lipo_create(
     name = "lipo",
-    srcs = binaries(),
+    srcs = [
+        "@@rules_multitool++multitool+multitool.bazelisk.macos_arm64//tools/bazelisk:macos_arm64_executable",
+        "@@rules_multitool++multitool+multitool.bazelisk.macos_x86_64//tools/bazelisk:macos_x86_64_executable",
+    ],
     out = "bazelisk",
 )
