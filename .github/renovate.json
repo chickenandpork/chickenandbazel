@@ -40,13 +40,13 @@
         "pre-commit"
       ],
       "matchUpdateTypes": [
+        "bump",
+        "digest",
+        "lockFileMaintenance",
         "patch",
         "pin",
         "pinDigest",
-        "digest",
-        "lockFileMaintenance",
-        "rollback",
-        "bump"
+        "rollback"
       ]
     }
   ],
@@ -55,6 +55,5 @@
   "postUpdateOptions": [
     "gomodMassage",
     "gomodTidy"
-  ],
-  "minimumReleaseAge": "3 days"
+  ]
 }
