@@ -42,11 +42,8 @@
       "matchUpdateTypes": [
         "bump",
         "digest",
-        "lockFileMaintenance",
-        "patch",
-        "pin",
-        "pinDigest",
-        "rollback"
+        "minor",
+        "patch"
       ]
     }
   ],
