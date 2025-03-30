@@ -43,3 +43,8 @@ copy_file(
     allow_symlink = True,
     is_executable = False,
 )
+
+alias(
+  name = "multitool",
+  actual = "//toolchains/multitool",
+)
