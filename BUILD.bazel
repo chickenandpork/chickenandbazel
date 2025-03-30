@@ -48,3 +48,11 @@ alias(
   name = "multitool",
   actual = "//toolchains/multitool",
 )
+
+genrule(
+  name = "sudoinstall",
+  cmd = "echo 'sudo installer -target / -pkg $<' > $@",
+  executable = True,
+  srcs = [ ":pkg" ],
+  outs = [ "install.bash" ],
+)
