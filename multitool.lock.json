@@ -88,5 +88,23 @@
         "cpu": "x86_64"
       }     
     ]       
+  },    
+  "terragrunt": {
+    "binaries": [
+      {
+        "kind": "file",
+        "url": "https://github.com/gruntwork-io/terragrunt/releases/download/v0.77.1/terragrunt_darwin_arm64",
+        "sha256": "1e50edd4e9d95dfad2be0259743ab03bf1d3e3e29d5059d07a32b18ffcb11275",
+        "os": "macos",
+        "cpu": "arm64"
+      },    
+      {     
+        "kind": "file",
+        "url": "https://github.com/gruntwork-io/terragrunt/releases/download/v0.77.1/terragrunt_darwin_amd64",
+        "sha256": "0b0ee8ce1c8b63c74819e9f015c39adee4a7a6dd61aeaa24a7d5d21e76bf6e3c",
+        "os": "macos",
+        "cpu": "x86_64"
+      }     
+    ]       
   }         
 }
