@@ -18,6 +18,7 @@ pkg_tar(
         "//toolchains/git-town:lipo",
         "//toolchains/ibazel:lipo",
         "//toolchains/nomad:lipo",
+        "//toolchains/sops:lipo",
         "//toolchains/terraform:lipo",
         "//toolchains/terragrunt:lipo",
     ],
