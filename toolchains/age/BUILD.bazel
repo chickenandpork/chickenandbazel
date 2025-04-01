@@ -1,0 +1,12 @@
+load("//lib:lipo.bzl", "lipo_check", "lipo_create")
+
+lipo_check(binary = ":age")
+
+lipo_create(
+    name = "lipo",
+    srcs = [
+        "@@rules_multitool++multitool+multitool.age.macos_arm64//tools/age:macos_arm64_executable",
+        "@@rules_multitool++multitool+multitool.age.macos_x86_64//tools/age:macos_x86_64_executable",
+    ],
+    out = "age",
+)
