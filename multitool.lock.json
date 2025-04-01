@@ -79,16 +79,16 @@
         "os": "macos",
         "cpu": "arm64"
       },
-      { 
+      {
         "kind": "archive",
         "url": "https://releases.hashicorp.com/nomad/1.9.4/nomad_1.9.4_darwin_amd64.zip",
         "file": "nomad",
         "sha256": "310a6855eb0365d222fcc024a68575da6c108b446b1db7fd02cc3c355e88061a",
         "os": "macos",
         "cpu": "x86_64"
-      } 
-    ]   
-  },    
+      }
+    ]
+  },
   "terraform": {
     "binaries": [
       {
@@ -98,17 +98,17 @@
         "sha256": "3264fe6a903665ef91d18eebd99c494976f9d96f5dac603e4f1e283682404009",
         "os": "macos",
         "cpu": "arm64"
-      },    
-      {     
+      },
+      {
         "kind": "archive",
         "url": "https://releases.hashicorp.com/terraform/1.10.4/terraform_1.10.4_darwin_amd64.zip",
         "file": "terraform",
         "sha256": "3e3d54a96b62b205636ce0fa9b64b85c23cb7e8ad0d63eb74d70080ff1ebfa3e",
         "os": "macos",
         "cpu": "x86_64"
-      }     
-    ]       
-  },    
+      }
+    ]
+  },
   "terragrunt": {
     "binaries": [
       {
@@ -117,14 +117,14 @@
         "sha256": "1e50edd4e9d95dfad2be0259743ab03bf1d3e3e29d5059d07a32b18ffcb11275",
         "os": "macos",
         "cpu": "arm64"
-      },    
-      {     
+      },
+      {
         "kind": "file",
         "url": "https://github.com/gruntwork-io/terragrunt/releases/download/v0.77.1/terragrunt_darwin_amd64",
         "sha256": "0b0ee8ce1c8b63c74819e9f015c39adee4a7a6dd61aeaa24a7d5d21e76bf6e3c",
         "os": "macos",
         "cpu": "x86_64"
-      }     
-    ]       
-  }         
+      }
+    ]
+  }
 }

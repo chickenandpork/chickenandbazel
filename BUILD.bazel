@@ -32,6 +32,7 @@ pkgbuild_tars(
     name = "pkg",
     package_name = "chickenandbazel.pkg",
     identifier = "nu.old.chickenandbazel",
+    tags = [ "no-cache" ],
     tars = [":binaries"],
     version = VERSION,
 )
