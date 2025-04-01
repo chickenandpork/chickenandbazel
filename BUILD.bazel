@@ -14,10 +14,12 @@ pkg_tar(
     name = "binaries",
     srcs = [
         "//scripts:check-installs.sh",
+        "//toolchains/age:lipo",
         "//toolchains/bazelisk:lipo",
         "//toolchains/git-town:lipo",
         "//toolchains/ibazel:lipo",
         "//toolchains/nomad:lipo",
+        "//toolchains/sops:lipo",
         "//toolchains/terraform:lipo",
         "//toolchains/terragrunt:lipo",
     ],
@@ -32,6 +34,7 @@ pkgbuild_tars(
     name = "pkg",
     package_name = "chickenandbazel.pkg",
     identifier = "nu.old.chickenandbazel",
+    tags = [ "no-cache" ],
     tars = [":binaries"],
     version = VERSION,
 )
