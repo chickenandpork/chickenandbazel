@@ -3,15 +3,15 @@
     "renovate_datasource": "github-release-attachments",
     "renovate_depname": "bazelbuild/bazelisk",
     "renovate_versioning": "semver",
-    "sha256": "0af019eeb642fa70744419d02aa32df55e6e7a084105d49fb26801a660aa56d3",
-    "version": "v1.25.0"
+    "sha256": "5c77f33f91dd3df119d192175100cb5b50302eb7ee37859cbab79e10a76ccce8",
+    "version": "v1.26.0"
   },
   "bazelisk_darwin_arm64": {
     "renovate_datasource": "github-release-attachments",
     "renovate_depname": "bazelbuild/bazelisk",
     "renovate_versioning": "semver",
-    "sha256": "b13dd89c6ecd90944ca3539f5a2c715a18f69b7458878c471a902a8e482ceb4b",
-    "version": "v1.25.0"
+    "sha256": "d1ca9911cc19e1f17483f93956908334f2b7f3dd13f20853417b68fc3c3eb370",
+    "version": "v1.26.0"
   },
   "gittown_darwin_amd64": {
     "renovate_datasource": "github-release-attachments",
