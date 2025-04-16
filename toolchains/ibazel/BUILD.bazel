@@ -6,7 +6,7 @@ lipo_create(
     name = "lipo",
     srcs = [
         "@@rules_multitool++multitool+multitool.ibazel.macos_arm64//tools/ibazel:macos_arm64_executable",
-        #"@@rules_multitool++multitool+multitool.ibazel.macos_x86_64//tools/ibazel:macos_x86_64_executable",
+        "@@rules_multitool++multitool+multitool.ibazel.macos_x86_64//tools/ibazel:macos_x86_64_executable",
     ],
     out = "ibazel",
 )
