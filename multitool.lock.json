@@ -20,6 +20,26 @@
       }
     ]
   },
+  "age-keygen": {
+    "binaries": [
+      {
+        "kind": "archive",
+        "url": "https://github.com/FiloSottile/age/releases/download/v1.2.1/age-v1.2.1-darwin-arm64.tar.gz",
+        "file": "age/age-keygen",
+        "sha256": "cf79875bd5970dc2dac60c87fa50cee1ff1f9a41b0eb273f65e174aff37c367a",
+        "os": "macos",
+        "cpu": "arm64"
+      },
+      {
+        "kind": "archive",
+        "url": "https://github.com/FiloSottile/age/releases/download/v1.2.1/age-v1.2.1-darwin-amd64.tar.gz",
+        "file": "age/age-keygen",
+        "sha256": "424e1d64438a730626540b2e01e98d132a64214442ca9465b3e82336d12e633e",
+        "os": "macos",
+        "cpu": "x86_64"
+      }
+    ]
+  },
   "bazelisk": {
     "binaries": [
       {

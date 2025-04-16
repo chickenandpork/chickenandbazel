@@ -15,6 +15,7 @@ pkg_tar(
     srcs = [
         "//scripts:check-installs.sh",
         "//toolchains/age:lipo",
+        "//toolchains/age-keygen:lipo",
         "//toolchains/bazelisk:lipo",
         "//toolchains/git-town:lipo",
         "//toolchains/ibazel:lipo",
