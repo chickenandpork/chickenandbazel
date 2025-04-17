@@ -17,15 +17,15 @@
     "renovate_datasource": "github-release-attachments",
     "renovate_depname": "git-town/git-town",
     "renovate_versioning": "semver",
-    "sha256": "5a2831470a3c35c77d9dbe57e50bade542713b1ca1ef94b3533aafe93e0937a1",
-    "version": "v18.3.2"
+    "sha256": "af279e77f887cf41090caed42d69febed0bf755a6ab70bc15999c8abe7f3aa28",
+    "version": "v19.0.0"
   },
   "gittown_darwin_arm64": {
     "renovate_datasource": "github-release-attachments",
     "renovate_depname": "git-town/git-town",
     "renovate_versioning": "semver",
-    "sha256": "65b45226f091b6dbc0c0e66e7ab8a243b119665d19a33bec8e180abec5628fc5",
-    "version": "v18.3.2"
+    "sha256": "cd3ec020261e63db295f12423624106694df67a45813d56ed2705933880ca67a",
+    "version": "v19.0.0"
   },
   "ibazel_darwin_arm64": {
     "renovate_datasource": "github-release-attachments",
