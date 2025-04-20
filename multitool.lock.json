@@ -58,6 +58,26 @@
       }
     ]
   },
+  "gitlfs": {
+    "binaries": [
+        {
+            "kind": "archive",
+            "url": "https://github.com/git-lfs/git-lfs/releases/download/v3.6.1/git-lfs-darwin-arm64-v3.6.1.zip",
+            "file": "git-lfs-3.6.1/git-lfs",
+            "sha256": "83b4ea3b0c72ba19e3bc46e47e92476f4505cc96693333b9fa0a314dddacc4ba",
+            "os": "macos",
+            "cpu": "arm64"
+        },
+        {
+            "kind": "archive",
+            "url": "https://github.com/git-lfs/git-lfs/releases/download/v3.6.1/git-lfs-darwin-amd64-v3.6.1.zip",
+            "file": "git-lfs-3.6.1/git-lfs",
+            "sha256": "b53c361e6c85479507ed39ba99b87ec0888ac52f5afd2084fc68af4103081391",
+            "os": "macos",
+            "cpu": "x86_64"
+        }
+    ]
+  },
   "gittown": {
     "binaries": [
         {

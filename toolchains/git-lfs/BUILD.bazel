@@ -1,0 +1,10 @@
+load("//lib:lipo.bzl", "lipo_create")
+
+lipo_create(
+    name = "lipo",
+    srcs = [
+        "@@rules_multitool++multitool+multitool.gitlfs.macos_arm64//tools/gitlfs:macos_arm64_executable",
+        "@@rules_multitool++multitool+multitool.gitlfs.macos_x86_64//tools/gitlfs:macos_x86_64_executable",
+    ],
+    out = "git-lfs",
+)

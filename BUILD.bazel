@@ -17,6 +17,7 @@ pkg_tar(
         "//toolchains/age:lipo",
         "//toolchains/age-keygen:lipo",
         "//toolchains/bazelisk:lipo",
+        "//toolchains/git-lfs:lipo",
         "//toolchains/git-town:lipo",
         "//toolchains/ibazel:lipo",
         "//toolchains/nomad:lipo",
