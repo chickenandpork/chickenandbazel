@@ -32,6 +32,6 @@
     "renovate_depname": "bazelbuild/bazel-watcher",
     "renovate_versioning": "semver",
     "sha256": "c2da75cbab7a4b2b97ba534653bb12e4dd731157bb1c9d660f79df3b330a7239",
-    "version": "v0.25.3"
+    "version": "v0.26.0"
   }
 }
