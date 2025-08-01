@@ -31,7 +31,7 @@
     "renovate_datasource": "github-release-attachments",
     "renovate_depname": "bazelbuild/bazel-watcher",
     "renovate_versioning": "semver",
-    "sha256": "d9986f5beb09562489e21cd96bc065e598f29c671aba7c9944a063d70b8a4ea8",
-    "version": "v0.26.8"
+    "sha256": "3e3e609e3447204289b36c0f279f4d155e583f3289eb1ff9dcb92eae8c3fc505",
+    "version": "v0.26.10"
   }
 }
