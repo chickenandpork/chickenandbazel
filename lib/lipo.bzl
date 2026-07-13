@@ -8,6 +8,7 @@
 #     srcs = [ "@baselisk_darwin_amd64//file", "@baselisk_darwin_arm64//file" ],
 #     out = "bazelisk",
 # )
+load("@rules_shell//shell:sh_test.bzl", "sh_test")
 
 # simple two-level flatten to allow dumping in arrays as elements of the array
 def flatten(a):
@@ -50,7 +51,7 @@ def lipo_create(srcs, out, name = None, visibility = ["//visibility:public"]):
 # yep, a rule "lipo_check" and a default name "lipo_test".
 
 def lipo_check(binary, archs = ["x86_64", "arm64"], name = "lipo_test", visibility = ["//visibility:public"]):
-    native.sh_test(
+    sh_test(
         args = flatten([["-a", a] for a in archs] + [["-b", "$(location {})".format(binary)]]),
         data = [binary],
         name = name,
