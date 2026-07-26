@@ -1,12 +1,17 @@
 py_binary(
+    legacy_create_init = 0,
     name = "release-worthy",
-    srcs = ["release-worthy.py"],
+    srcs = [
+        "__init__.py",
+        "release-worthy.py",
+    ],
 )
 
 py_test(
+    legacy_create_init = 0,
     name = "weights_test",
-    srcs = ["weights_test.py"],
-    #deps = [
-    #    "//path/to/a/py/library",
-    #],
+    srcs = [
+        "__init__.py",
+        "weights_test.py",
+    ],
 )
