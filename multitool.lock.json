@@ -4,17 +4,17 @@
     "binaries": [
       {
         "kind": "archive",
-        "url": "https://github.com/FiloSottile/age/releases/download/v1.2.1/age-v1.2.1-darwin-arm64.tar.gz",
+        "url": "https://github.com/FiloSottile/age/releases/download/v1.3.1/age-v1.3.1-darwin-arm64.tar.gz",
         "file": "age/age",
-        "sha256": "cf79875bd5970dc2dac60c87fa50cee1ff1f9a41b0eb273f65e174aff37c367a",
+        "sha256": "01120ea2cbf0463d4c6bd767f99f3271bbed1cdc8a9aa718a76ba1fe4f01998b",
         "os": "macos",
         "cpu": "arm64"
       },
       {
         "kind": "archive",
-        "url": "https://github.com/FiloSottile/age/releases/download/v1.2.1/age-v1.2.1-darwin-amd64.tar.gz",
+        "url": "https://github.com/FiloSottile/age/releases/download/v1.3.1/age-v1.3.1-darwin-amd64.tar.gz",
         "file": "age/age",
-        "sha256": "424e1d64438a730626540b2e01e98d132a64214442ca9465b3e82336d12e633e",
+        "sha256": "2b233301ad21ab7b1eabd9ae1198a164005fa4928fcdd745d47c39f8593209d7",
         "os": "macos",
         "cpu": "x86_64"
       }
@@ -24,17 +24,17 @@
     "binaries": [
       {
         "kind": "archive",
-        "url": "https://github.com/FiloSottile/age/releases/download/v1.2.1/age-v1.2.1-darwin-arm64.tar.gz",
+        "url": "https://github.com/FiloSottile/age/releases/download/v1.3.1/age-v1.3.1-darwin-arm64.tar.gz",
         "file": "age/age-keygen",
-        "sha256": "cf79875bd5970dc2dac60c87fa50cee1ff1f9a41b0eb273f65e174aff37c367a",
+        "sha256": "01120ea2cbf0463d4c6bd767f99f3271bbed1cdc8a9aa718a76ba1fe4f01998b",
         "os": "macos",
         "cpu": "arm64"
       },
       {
         "kind": "archive",
-        "url": "https://github.com/FiloSottile/age/releases/download/v1.2.1/age-v1.2.1-darwin-amd64.tar.gz",
+        "url": "https://github.com/FiloSottile/age/releases/download/v1.3.1/age-v1.3.1-darwin-amd64.tar.gz",
         "file": "age/age-keygen",
-        "sha256": "424e1d64438a730626540b2e01e98d132a64214442ca9465b3e82336d12e633e",
+        "sha256": "2b233301ad21ab7b1eabd9ae1198a164005fa4928fcdd745d47c39f8593209d7",
         "os": "macos",
         "cpu": "x86_64"
       }
@@ -44,15 +44,15 @@
     "binaries": [
       {
         "kind": "file",
-        "url": "https://github.com/bazelbuild/bazelisk/releases/download/v1.27.0/bazelisk-darwin-arm64",
-        "sha256": "8bf08c894ccc19ef37f286e58184c3942c58cb08da955e990522703526ddb720",
+        "url": "https://github.com/bazelbuild/bazelisk/releases/download/v1.29.0/bazelisk-darwin-arm64",
+        "sha256": "cee851f726789227d5561004e9904a52be45c3efb56f8b38b6993d6adbaa0409",
         "os": "macos",
         "cpu": "arm64"
       },
       {
         "kind": "file",
-        "url": "https://github.com/bazelbuild/bazelisk/releases/download/v1.27.0/bazelisk-darwin-amd64",
-        "sha256": "8fcd7ba828f673ba4b1529425e01e15ac42599ef566c17f320d8cbfe7b96a167",
+        "url": "https://github.com/bazelbuild/bazelisk/releases/download/v1.29.0/bazelisk-darwin-amd64",
+        "sha256": "16c3d7aa15323a9fb69f56c7ec5733ed18bedb786680d0ba13bb12a3c8083007",
         "os": "macos",
         "cpu": "x86_64"
       }
@@ -62,17 +62,17 @@
     "binaries": [
       {
         "kind": "archive",
-        "url": "https://github.com/git-lfs/git-lfs/releases/download/v3.7.0/git-lfs-darwin-arm64-v3.7.0.zip",
-        "file": "git-lfs-3.7.0/git-lfs",
-        "sha256": "34ca9df7031061b8471d53076cb76a974768937a209c3fcaa3de6270ec6465ea",
+        "url": "https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/git-lfs-darwin-arm64-v3.7.1.zip",
+        "file": "git-lfs-3.7.1/git-lfs",
+        "sha256": "76260fb34f4ee622ff0a66b857e5954aa49c7e343a92e57a1ec4a760618c94b2",
         "os": "macos",
         "cpu": "arm64"
       },
       {
         "kind": "archive",
-        "url": "https://github.com/git-lfs/git-lfs/releases/download/v3.7.0/git-lfs-darwin-amd64-v3.7.0.zip",
-        "file": "git-lfs-3.7.0/git-lfs",
-        "sha256": "eab348c3985c55b013d5536965b7a102b2925acf09fbf11bf157e64a7e92b798",
+        "url": "https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/git-lfs-darwin-amd64-v3.7.1.zip",
+        "file": "git-lfs-3.7.1/git-lfs",
+        "sha256": "b5b1b641c0648c83661fa9eda991cd3eff945264dabc2cdf411a80dfe7ec0970",
         "os": "macos",
         "cpu": "x86_64"
       }
@@ -82,17 +82,17 @@
     "binaries": [
       {
         "kind": "archive",
-        "url": "https://github.com/git-town/git-town/releases/download/v21.5.0/git-town_macos_arm_64.tar.gz",
+        "url": "https://github.com/git-town/git-town/releases/download/v24.0.0/git-town_macos_arm_64.tar.gz",
         "file": "git-town",
-        "sha256": "987978840f20c71265dc106056f2c6a3c1ca2c9f30566a9a1fca5d5d6a441c43",
+        "sha256": "0de42d52bad34316413c9d0ba0052d09d4ba8746930aa2cc6eaa5931562a91b2",
         "os": "macos",
         "cpu": "arm64"
       },
       {
         "kind": "archive",
-        "url": "https://github.com/git-town/git-town/releases/download/v21.5.0/git-town_macos_intel_64.tar.gz",
+        "url": "https://github.com/git-town/git-town/releases/download/v24.0.0/git-town_macos_intel_64.tar.gz",
         "file": "git-town",
-        "sha256": "d6ae9c8ae83b766654a09234cccb3cc11ea092972bfa587c5de5d3f943c3d032",
+        "sha256": "ef0ba7ef0526a4ad414d9a3e8507b2eaa6e08edb6dd67ffff0ee244222c84cd4",
         "os": "macos",
         "cpu": "x86_64"
       }
@@ -102,15 +102,15 @@
     "binaries": [
       {
         "kind": "file",
-        "url": "https://github.com/bazelbuild/bazel-watcher/releases/download/v0.26.10/ibazel_darwin_arm64",
-        "sha256": "3e3e609e3447204289b36c0f279f4d155e583f3289eb1ff9dcb92eae8c3fc505",
+        "url": "https://github.com/bazelbuild/bazel-watcher/releases/download/v0.32.0/ibazel_darwin_arm64",
+        "sha256": "1cfec3c53213520ddba3d8ff6dbc85ac0ec0c07e9703dc44695e1af166b009ab",
         "os": "macos",
         "cpu": "arm64"
       },
       {
         "kind": "file",
-        "url": "https://github.com/bazelbuild/bazel-watcher/releases/download/v0.26.10/ibazel_darwin_amd64",
-        "sha256": "ad30c44210bb0bf8663aaf29e2820dcfa0be75fe3bd81218bf7b70fbaba849b9",
+        "url": "https://github.com/bazelbuild/bazel-watcher/releases/download/v0.32.0/ibazel_darwin_amd64",
+        "sha256": "781e6113fc8f3d41299a001fe2e4780c1f6cc3d236ace8af69a87558ade07df4",
         "os": "macos",
         "cpu": "x86_64"
       }
@@ -160,15 +160,15 @@
     "binaries": [
       {
         "kind": "file",
-        "url": "https://github.com/getsops/sops/releases/download/v3.10.2/sops-v3.10.2.darwin.arm64",
-        "sha256": "99702df79737162b986641afb8d98251acb16a52e6cab556a6b6f57c608c059a",
+        "url": "https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.darwin.arm64",
+        "sha256": "b97c0d434aab577dc40310e8d22ff9e45eef4c80638ab978daae9b4681c59286",
         "os": "macos",
         "cpu": "arm64"
       },
       {
         "kind": "file",
-        "url": "https://github.com/getsops/sops/releases/download/v3.10.2/sops-v3.10.2.darwin.amd64",
-        "sha256": "dece9b0131af5ced0f8c278a53c0cf06a4f0d1d70a177c0979f6d111654397ce",
+        "url": "https://github.com/getsops/sops/releases/download/v3.13.3/sops-v3.13.3.darwin.amd64",
+        "sha256": "42162d5cef10b74fcf80a045a70e658d7ce6e63d6ea1be6f347e44015714468d",
         "os": "macos",
         "cpu": "x86_64"
       }
@@ -179,7 +179,6 @@
       {
         "kind": "file",
         "url": "https://factory.talos.dev/talosctl/v1.11.1/talosctl-darwin-arm64",
-        "file": "talosctl",
         "sha256": "2f4b6dbb880a787adffd2e25916a231e9ca22b191af499a9501de75be932859f",
         "os": "macos",
         "cpu": "arm64"
@@ -187,7 +186,6 @@
       {
         "kind": "file",
         "url": "https://factory.talos.dev/talosctl/v1.11.1/talosctl-darwin-amd64",
-        "file": "talosctl",
         "sha256": "c94abde889e7cfb420d89c824fe0f26077fdab21155bf0b4e67f8027c3bba02e",
         "os": "macos",
         "cpu": "x86_64"
@@ -218,15 +216,15 @@
     "binaries": [
       {
         "kind": "file",
-        "url": "https://github.com/gruntwork-io/terragrunt/releases/download/v0.87.2/terragrunt_darwin_arm64",
-        "sha256": "3121d274b0f3a9a2e91e1536557564521d0cbd21aedb984879305e37651e2e25",
+        "url": "https://github.com/gruntwork-io/terragrunt/releases/download/v1.1.1/terragrunt_darwin_arm64",
+        "sha256": "339ac06bf16e3b4a382394a6174497700296cc485a5172ce37eba725e720c83c",
         "os": "macos",
         "cpu": "arm64"
       },
       {
         "kind": "file",
-        "url": "https://github.com/gruntwork-io/terragrunt/releases/download/v0.87.2/terragrunt_darwin_amd64",
-        "sha256": "0d59c8877c1ade6937f109e0b04dd63eae5a6637a9f1bc5bf3d14f2992c89321",
+        "url": "https://github.com/gruntwork-io/terragrunt/releases/download/v1.1.1/terragrunt_darwin_amd64",
+        "sha256": "2adba5f80d3cb14596f6190bb0d4eff390c5adef8700b9bf445f18bf0402a872",
         "os": "macos",
         "cpu": "x86_64"
       }
