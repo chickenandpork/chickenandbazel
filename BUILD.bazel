@@ -16,6 +16,7 @@ pkg_tar(
         "//scripts:check-installs.sh",
         "//toolchains/age:lipo",
         "//toolchains/age-keygen:lipo",
+        "//toolchains/apfel:_apfel",
         "//toolchains/bazelisk:lipo",
         "//toolchains/gh-poi:lipo",
         "//toolchains/git-lfs:lipo",

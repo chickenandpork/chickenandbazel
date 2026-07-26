@@ -1,0 +1,10 @@
+load("@bazel_skylib//rules:copy_file.bzl", "copy_file")
+
+copy_file(
+    name = "_apfel",
+    src = "@@rules_multitool++multitool+multitool.apfel.macos_arm64//tools/apfel:macos_arm64_executable",
+    out = "apfel",
+    allow_symlink = True,
+    is_executable = True,
+    visibility = ["//visibility:public"],
+)
