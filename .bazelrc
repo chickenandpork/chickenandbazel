@@ -1,1 +1,3 @@
 build --stamp --workspace_status_command=./lib/bazel/workplace_status.sh
+common:agent --host_jvm_args=-Djava.net.preferIPv4Stack=true
+common:agent --sandbox_tmpdir=/tmp/bazel-sandbox
