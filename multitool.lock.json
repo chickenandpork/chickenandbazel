@@ -40,6 +40,18 @@
       }
     ]
   },
+  "apfel": {
+    "binaries": [
+      {
+        "kind": "archive",
+        "url": "https://github.com/Arthur-Ficial/apfel/releases/download/v1.8.4/apfel-1.8.4-arm64-macos.tar.gz",
+        "file": "apfel",
+        "sha256": "7daaef3cfa37554daa51ab7eef6a9a88ca5c77d2f014eee4ab318628ab4fc061",
+        "os": "macos",
+        "cpu": "arm64"
+      }
+    ]
+  },
   "bazelisk": {
     "binaries": [
       {
