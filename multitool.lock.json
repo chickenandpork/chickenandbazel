@@ -58,6 +58,24 @@
       }
     ]
   },
+  "gh-poi": {
+    "binaries": [
+      {
+        "kind": "file",
+        "url": "https://github.com/seachicken/gh-poi/releases/download/v0.18.3/darwin-arm64",
+        "sha256": "f0e05131ffca6e21827233c736ddfb1dbfc287f2f071df98dc7f90b73376dc6f",
+        "os": "macos",
+        "cpu": "arm64"
+      },
+      {
+        "kind": "file",
+        "url": "https://github.com/seachicken/gh-poi/releases/download/v0.18.3/darwin-amd64",
+        "sha256": "5b55daf0906a272f099442631c619a6ff44d9f77be36954ccfb344bfadf5b480",
+        "os": "macos",
+        "cpu": "x86_64"
+      }
+    ]
+  },
   "gitlfs": {
     "binaries": [
       {
