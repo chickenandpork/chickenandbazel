@@ -29,7 +29,7 @@ jobs:
       statuses: write
     steps:
       - name: Merge Workflow
-        uses: squalrus/merge-bot@562278fc2c3fa786a1d530ab9036f32119fcc3ec # v0.4.5
+        uses: squalrus/merge-bot@cbaaab43ca1bdc625614bab4f5e592fb21b565af # v0.5.3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           #reviewers: true
